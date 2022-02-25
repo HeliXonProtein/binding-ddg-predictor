@@ -2,3 +2,4 @@
 !.gitignore
 !model.pt
 !example*.pdb
+!overview.png
