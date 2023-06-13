@@ -18,11 +18,12 @@ def main():
     args = parser.parse_args()
 
     if args.model is None:
-        if args.verbose:
-            print(f"Downloading weights to: {CACHE_DIR}")
-        CACHE_DIR.mkdir(exist_ok=True, parents=True)
-        urllib.request.urlretrieve(MODEL_WEIGHTS, CACHE_DIR / "model.pt")
         model_in = CACHE_DIR / "model.pt"
+        if not model_in.exists():
+            if args.verbose:
+                print(f"Downloading weights to: {model_in}")
+            CACHE_DIR.mkdir(exist_ok=True, parents=True)
+            urllib.request.urlretrieve(MODEL_WEIGHTS, model_in)
     else:
         model_in = args.model
 
