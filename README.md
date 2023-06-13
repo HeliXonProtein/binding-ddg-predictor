@@ -15,6 +15,7 @@ conda env create -f environment.yml
 ```
 
 If you have satisfied all the dependencies, you can install the package after cloning the repo with:
+No additional packages will be installed except for the ddg-predictor package.
 
 ```bash
 pip install -e .
