@@ -14,6 +14,12 @@ cd binding-ddg-predictor
 conda env create -f environment.yml
 ```
 
+If you have satisfied all the dependencies, you can install the package after cloning the repo with:
+
+```bash
+pip install -e .
+````
+
 ## Usage
 
 The model requires two input PDB files: (1) a wild-type complex structure, and (2) a mutated complex structure. The mutated structures are typically built by protein design packages such as Rosetta. Note that both structures must have the same length. The ddG can be predicted for the two structures by running the command:
