@@ -1,0 +1,3 @@
+include data/mode.pt
+include data/example_mut.pdb
+include data/example_wt.pdb
