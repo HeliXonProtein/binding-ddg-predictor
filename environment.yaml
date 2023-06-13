@@ -3,12 +3,12 @@ name: binding-ddg-predictor
 channels:
     - pytorch
     - conda-forge
-
+    - nodefaults
 dependencies:
     - python
     - pytorch
     - pytorch-gpu
-    - cudatoolkit=11.3
+    - cudatoolkit
     - biopython
     - easydict
     - pip

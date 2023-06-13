@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 
-from .common import mask_zero, global_to_local, local_to_global, normalize_vector
+from ddg_predictor.models.common import mask_zero, global_to_local, local_to_global, normalize_vector
 
 
 def _alpha_from_logits(logits, mask, inf=1e5):

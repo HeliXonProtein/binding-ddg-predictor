@@ -10,10 +10,9 @@ setup(
     packages=find_packages(),
     install_requires=[],
     include_package_data=True,
-    package_data={'ddg_predictor': ['data/model.pt']},
     entry_points={
         'console_scripts': [
-            'ddg_predict = ddg_predictor.scripts.predict:__main__',
+            'ddg_predict=ddg_predictor.scripts.predict:main',
         ],
     },
 )

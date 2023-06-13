@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from utils.protein import ATOM_CA, ATOM_CB
+from ddg_predictor.utils.protein import ATOM_CA, ATOM_CB
 
 
 def get_pos_CB(pos14, atom_mask):
