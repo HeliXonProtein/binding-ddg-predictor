@@ -4,6 +4,10 @@
 
 This repository contains the deep learning model introduced in the paper "Deep Learning-Guided Optimization of Human Antibody Against SARS-CoV-2 Variants with Broad Neutralization". It predicts changes in binding energy upon mutation (ddG) for protein-protein complexes.
 
+## 📢 News
+
+- Please check out our latest work on mutational effect prediction for protein-protein interactions: *Rotamer Density Estimator is an Unsupervised Learner of the Effect of Mutations on Protein-Protein Interaction* (ICLR 2023) [[Code]](https://github.com/luost26/RDE-PPI) [[Paper]](https://www.biorxiv.org/content/10.1101/2023.02.28.530137)
+
 ## Installation
 
 The model is tested with `Python 3.8`, `PyTorch 1.10`, `cudatoolkit 11.3`, and `Biopython 1.79`. The dependencies can be set up using the following commands:
