@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from models.residue import PerResidueEncoder
-from models.attention import GAEncoder
-from models.common import get_pos_CB, construct_3d_basis
-from utils.protein import ATOM_N, ATOM_CA, ATOM_C
+from ddg_predictor.models.residue import PerResidueEncoder
+from ddg_predictor.models.attention import GAEncoder
+from ddg_predictor.models.common import get_pos_CB, construct_3d_basis
+from ddg_predictor.utils.protein import ATOM_N, ATOM_CA, ATOM_C
 
 
 class ComplexEncoder(nn.Module):

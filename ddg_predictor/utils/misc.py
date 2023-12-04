@@ -1,7 +1,12 @@
 import random
+from pathlib import Path
+
+import numpy as np
 import torch
 import torch.linalg
-import numpy as np
+
+MODEL_WEIGHTS = "https://github.com/HeliXonProtein/binding-ddg-predictor/raw/main/data/model.pt"
+CACHE_DIR = Path("~/.cache/ddg_predictor").expanduser()
 
 
 class BlackHole(object):
@@ -38,4 +43,3 @@ def recursive_to(obj, device):
 
     else:
         return obj
-

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from models.common import PositionalEncoding, construct_3d_basis, global_to_local
+from ddg_predictor.models.common import PositionalEncoding, construct_3d_basis, global_to_local
 
 
 class PerResidueEncoder(nn.Module):
